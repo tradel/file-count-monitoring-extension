@@ -1,0 +1,19 @@
+<monitor>
+    <name>FileCountMonitor</name>
+    <type>managed</type>
+    <enabled>true</enabled>
+    <description>Monitors number of files in a folder</description>
+    <monitor-configuration>
+    </monitor-configuration>
+    <monitor-run-task>
+        <execution-style>continuous</execution-style>
+        <name>Run</name>
+        <type>executable</type>
+        <task-arguments>
+        </task-arguments>
+        <executable-task>
+            <type>file</type>
+            <file>count-files.sh</file>
+        </executable-task>
+    </monitor-run-task>
+</monitor>
